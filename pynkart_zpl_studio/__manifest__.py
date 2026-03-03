@@ -3,42 +3,51 @@
     "name": "PynKart ZPL Studio Connector",
     "version": "1.0.0",
     "category": "Inventory",
-    "summary": "Export product and stock data from Odoo to external ZPL label tools",
+    "summary": "Native Odoo connector for PynKart ZPL Studio — design labels visually, print unlimited with RFID, automations & 29 languages",
     "description": """
 PynKart ZPL Studio Connector
-===========================
+=============================
 
-This module provides a native Odoo interface to export product and inventory
-data for ZPL label generation using external tools.
-
-Key Features
-------------
-• Export products, barcodes, prices, and quantities
-• Generate CSV / JSON files for label printing
-• Secure API token generation
-• Works with Odoo Online, Odoo.sh, and On-Premise
-• No system access required
-• Lightweight and safe
+Native Odoo connector for PynKart ZPL Studio desktop application.
+Connect your Odoo instance to the most powerful ZPL label design
+and printing platform built specifically for Odoo ERP.
 
 What This Module Does
 ---------------------
-This addon extends Odoo by allowing users to:
-• Select products or inventory records
-• Export structured data for ZPL label printing
-• Manage connection tokens for external tools
+• Exposes Odoo models and fields to PynKart ZPL Studio via secure API
+• Generates and manages API tokens for authentication
+• Supports all standard and custom Odoo models
+• Navigates relational fields (many2one, one2many, many2many)
+• Exports structured data for label printing (CSV / JSON)
+• Works with Odoo Online, Odoo.sh, and On-Premise
 
-The actual label design and printing is handled by a companion desktop
-application (optional).
-
-Important
----------
-• This module is fully functional on its own
-• No external software is required to install the addon
-• Compatible with Odoo Online
+Desktop App Capabilities (Licensed Separately)
+-----------------------------------------------
+• Visual drag-drop label designer with Monaco code editor
+• 40+ ZPL elements including 1D/2D barcodes and RFID encoding
+• Print automations with Odoo/API/Database triggers
+• Async batch printing (10,000+ labels)
+• 8 database connectors (MySQL, PostgreSQL, MongoDB, Redis, etc.)
+• Multi-user roles (Admin, Editor, Operator, Viewer)
+• IoT / CNC API for external device printing
+• 29 UI languages with RTL support
+• Dark mode, auto-save, template permissions
 
 Supported Versions
 ------------------
-Odoo 16.0 – 19.0
+Odoo 12.0 – 19.0
+
+Desktop App Licensing (Recurring)
+----------------------------------
+• 14-Day Free Trial (all features, no credit card)
+• From $12/14 days — $235/year
+• Per-machine license, unlimited printing
+• Purchase at pynkart.com/shop
+
+Contact
+-------
+• Email: pynkart.com@gmail.com
+• Website: pynkart.com/contactus
 
 License
 -------
@@ -50,12 +59,11 @@ Odoo Proprietary License (OPL-1)
     "support": "https://pynkart.com/contactus",
     "license": "OPL-1",
 
-    "price": 0.00,
+    "price": 54.00,
     "currency": "USD",
 
     "depends": ["base", "product", "stock"],
 
-    # REQUIRED: must actually do something
     "data": [
         "security/ir.model.access.csv",
         "views/pynkart_menu.xml",
@@ -70,14 +78,14 @@ Odoo Proprietary License (OPL-1)
     "auto_install": False,
 
     "images": [
-        "static/description/banner.png",        # Cover image / thumbnail (REQUIRED for 5/5 score)
-        "static/description/icon.png",          # Module icon (automatically used if present)
-        "static/description/screenshot_1.png",  # Desktop app interface
-        "static/description/screenshot_2.png",  # Odoo integration screen
-        "static/description/screenshot_3.png",  # Batch printing or features
+        "static/description/banner.png",
+        "static/description/icon.png",
+        "static/description/screenshot_1.png",
+        "static/description/screenshot_2.png",
+        "static/description/screenshot_3.png",
     ],
 
-    "live_test_url": "https://www.youtube.com/watch?v=Udd58fuvzPc",
+    "live_test_url": "https://youtube.com/playlist?list=PL-lluQB0QKMe-DkSABzjmCZ7rxgdZHqLx",
 
     "sequence": 10,
 }

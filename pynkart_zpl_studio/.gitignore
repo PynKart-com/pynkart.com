@@ -10,7 +10,6 @@ __pycache__/
 *~
 
 # Desktop application files (don't include in addon)
-*.exe
 *.dll
 
 # IDE
