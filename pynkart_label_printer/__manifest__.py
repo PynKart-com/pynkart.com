@@ -80,7 +80,7 @@ Odoo Proprietary License (OPL-1)
     "support": "https://pynkart.com/contactus",
     "license": "OPL-1",
 
-    "price": 149.00,
+    "price": 0.00,
     "currency": "USD",
 
     "depends": ["base"],
